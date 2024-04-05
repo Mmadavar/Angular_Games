@@ -1,0 +1,64 @@
+<body>
+<div id="page">
+  <div id="container">
+    <div cdkDropListGroup id="lists-container">
+
+      <div
+        cdkDropList
+        cdkDropListOrientation="horizontal"
+        [cdkDropListData]="puzzle1"
+        class="list"
+        (cdkDropListDropped)="drop($event)">
+        @for (item of puzzle1; track item) {
+        <div *ngIf="item!=21" class="tile" cdkDrag>{{item}}</div>
+        <div *ngIf="item==21" class="tile empty-tile" cdkDrag cdkDragDisabled="true"></div>
+        }
+      </div>
+
+      <div
+        cdkDropList
+        cdkDropListOrientation="horizontal"
+        [cdkDropListData]="puzzle2"
+        class="list"
+        (cdkDropListDropped)="drop($event)">
+        @for (item of puzzle2; track item) {
+        <div *ngIf="item!=21" class="tile" cdkDrag>{{item}}</div>
+        <div *ngIf="item==21" class="tile empty-tile" cdkDrag cdkDragDisabled="true"></div>
+        }
+      </div>
+
+      <div
+        cdkDropList
+        cdkDropListOrientation="horizontal"
+        [cdkDropListData]="puzzle3"
+        class="list"
+        (cdkDropListDropped)="drop($event)">
+        @for (item of puzzle3; track item) {
+        <div *ngIf="item!=21" class="tile" cdkDrag>{{item}}</div>
+        <div *ngIf="item==21" class="tile empty-tile" cdkDrag cdkDragDisabled="true"></div>
+        }
+      </div>
+
+      <div
+        cdkDropList
+        cdkDropListOrientation="horizontal"
+        [cdkDropListData]="puzzle4"
+        class="list"
+        (cdkDropListDropped)="drop($event)">
+        @for (item of puzzle4; track item) {
+        <div *ngIf="item != 21" class="tile" cdkDrag>{{ item }}</div>
+        <div *ngIf="item==21" class="tile empty-tile" cdkDragDisabled="true"></div>
+        }
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+
+body {
+  background-color: lightblue;
+}
+
+
+#lists-container{
+  overflow:hidden;
+  margin-left:auto;
+  margin-right: 0;
+
+}
+
+.list{
+  display:flex;
+  overflow: hidden;
+  margin-left: 500px;
+}
+
+.tile{
+  width:100px;
+  height:100px;
+  background-color: lightblue;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size:50px;
+  cursor:pointer;
+  border: 5px solid black;
+  margin:2px;
+}
+
+
+
+.hidden {
+  opacity: 0;
+}
+
+
+
